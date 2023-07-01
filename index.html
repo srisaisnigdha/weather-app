@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mobile-view</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="card" id="weartherCard">
+
+        <div class="Box">
+            <div class="searchBar">
+                <input type="text" name="city" placeholder="enter city name" autocomplete="off" spellcheck="false">
+                <div class="microphone">
+                    <button><img src="images/mic.png"></button>
+                </div>
+            </div>
+            <div class="searchImg">
+                <button><img src="images/search.png"></button>
+            </div>
+        </div>
+
+        <div class="error">
+            <p>Invalid city name</p>
+        </div>
+
+        <div class="weather">
+            <button id="muteButton1" class="movingButton"><img src="images/muteimg1.png"></button>
+            <button id="muteButton2" class="movingButton2"><img src="images/muteimg2.png"></button>
+
+            <img src="images/rain.png" class="weather-icon">
+            <h1 class="temp">22°C</h1>
+            <h2 class="city">New York</h2>
+            <div class="details">
+
+                <div class="col" id="humidity">
+                    <img src="images/humidity.png">
+                    <div>
+                        <p class="humidity">50%</p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <img src="images/wind.png">
+                    <div>
+                        <p class="wind">15 km/h</p>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

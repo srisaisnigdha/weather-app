@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #222;
+}
+
+.card {
+    width: 90%;
+    max-width: 470px;
+    /* background: linear-gradient(135deg, #00feba, #5b548a); */
+    /* background: linear-gradient(45deg, #5b548a, orange); */
+    background: linear-gradient(135deg, rgb(235, 165, 36), #605798);
+    /* https://youtu.be/aH0hbjBOD8I?t=217 */
+    color: #fff;
+    margin: 100px auto 0;
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center;
+}
+
+.Box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.searchBar {
+    width: 70%;
+    background-color: #ebfffc;
+    padding: 10px 25px;
+    height: 60px;
+    border-radius: 30px;
+    flex: 1;
+    margin-right: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.searchBar input {
+    border: 0px;
+    outline: 0px;
+    color: #555;
+    background-color: #ebfffc;
+    flex: 1;
+    font-size: 18px;
+}
+
+.microphone button {
+    border: 0px;
+    background-color: #ebfffc;
+    border-radius: 50%;
+    height: 45px;
+    width: 45px;
+    margin-right: -18px;
+    cursor: pointer;
+}
+
+.microphone button:hover {
+    background-color: #cccece !important;
+}
+
+.microphone img {
+    width: 12px;
+}
+
+.searchImg button {
+    border: 0px;
+    background-color: #ebfffc;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    cursor: pointer;
+}
+
+.searchImg img {
+    width: 16px
+}
+
+.searchImg button:hover {
+    background-color: #cccece;
+}
+
+.movingButton {
+    border: 0px;
+    background-color: #ebfffc;
+    border-radius: 50%;
+    height: 45px;
+    width: 45px;
+    /* height: 60px;
+    width: 60px; */
+    cursor: pointer;
+    position: absolute;
+    display: none;
+    margin-top: 16px;
+    /* margin-top:20px; */
+}
+
+.movingButton img {
+    width: 20px
+}
+
+.movingButton:hover {
+    background: #cccece;
+}
+
+.movingButton2 {
+    border: 0px;
+    background-color: #ebfffc;
+    border-radius: 50%;
+    height: 45px;
+    width: 45px;
+    /* height: 60px;
+    width: 60px; */
+    cursor: pointer;
+    position: absolute;
+    display: none;
+    margin-top: 16px;
+    /* margin-top:20px; */
+}
+
+.movingButton2 img {
+    width: 20px
+}
+
+.movingButton2:hover {
+    background: #cccece;
+}
+
+.weather-icon {
+    width: 170px;
+    margin-top: 30px;
+}
+
+.temp {
+    font-size: 80px;
+    font-weight: 500;
+}
+
+.city {
+    font-size: 45px;
+    font-weight: 400;
+    /* margin-top: -10px; */
+}
+
+.details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    /* 20 px frm left and right */
+    margin-top: 50px;
+}
+
+.col {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.col img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.humidity,
+.wind {
+    font-size: 28px;
+    margin-top: -6px;
+}
+
+.search text {
+    color: transparent;
+    text-shadow: 0 0 0 gray;
+}
+
+.weather {
+    display: none;
+}
+
+.error {
+    text-align: left;
+    margin-left: 10px;
+    margin-top: 10px;
+    font-size: 14px;
+    display: none;
+}
+
+@media (max-width: 490px) {
+
+    .card {
+        margin: 17px auto;
+    }
+
+    .searchBar {
+        /* justify-content: center; */
+        /* margin-bottom: 10px; */
+        margin-right: 0;
+    }
+
+    .searchBar input[type="text"] {
+        width: 100%;
+        height: 40px;
+        /* flex: 1; */
+        padding: 5px;
+        font-size: 16px;
+    }
+
+    .searchImg {
+        display: none;
+    }
+
+    .movingButton,
+    .movingButton2 {
+        /* display: block; */
+        margin-left: 3px;
+        margin-top: 16px;
+    }
+
+    .details {
+        margin-top: 35px;
+        display: flex;
+        flex-direction: column;
+        /* align-items: right; */
+        /* margin-bottom: -5px; */
+    }
+
+    #humidity {
+        margin-bottom: 25px;
+    }
+
+}
